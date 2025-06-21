@@ -17,17 +17,38 @@ const HomePage = () => {
     setTodos((prevTodos) => [...prevTodos, task]);
     await delay();
     false;
-    toast.success("Successfully Added!");
+    toast.success("Successfully Added", {
+      position: "top-right",
+      autoClose: 1500,
+      hideProgressBar: false,
+      pauseOnHover: false,
+      closeOnClick: true,
+      theme: "colored",
+    });
   };
 
   const deleteTask = (id) => {
     setTodos((prevTodos) => prevTodos.filter((_, i) => i !== id));
-    toast.success("Successfully Deleted!");
+    toast.success("Successfully Deleted", {
+      position: "top-right",
+      autoClose: 1500,
+      hideProgressBar: false,
+      pauseOnHover: false,
+      closeOnClick: true,
+      theme: "colored",
+    });
   };
 
   const updateTask = (task, id) => {
     setTodos((prevTodos) => prevTodos.map((t, i) => (i === id ? task : t)));
-    toast.success("Successfully Updated!");
+    toast.success("Successfully Updated", {
+      position: "top-right",
+      autoClose: 1500,
+      hideProgressBar: false,
+      pauseOnHover: false,
+      closeOnClick: true,
+      theme: "colored",
+    });
   };
 
   return (
