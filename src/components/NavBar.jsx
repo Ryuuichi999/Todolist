@@ -12,7 +12,6 @@ const NavBar = () => {
     <header>
       <div className="flex mr-auto gap-x-2 font-semibold text-2xl ">
         <Link to="/">
-          Home
           <img src={reactLogo} alt="reactLogo" />
         </Link>
         React : Todo list
